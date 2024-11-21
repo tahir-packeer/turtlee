@@ -1,0 +1,70 @@
+/* Unique styles for hatchery page */
+.hatchery-hero {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.hatchery-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hatchery-overlay {
+    background: rgba(41, 41, 62, 0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+/* Statistics section */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 5%;
+    background: #f8f9fa;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    color: #49cf6a;
+    font-weight: bold;
+}
+
+/* Process timeline */
+.timeline {
+    position: relative;
+    padding: 60px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background: #49cf6a;
+}
+
+.timeline-item {
+    margin: 40px 0;
+    position: relative;
+    width: 50%;
+} 
